@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+         <head>
+                   <title>Nacri Bakery</title>
+                   <meta name="viewport" content="width=device-width, initial-scale=1">
+                   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+                   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+                   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+         </head>
+<style>
+        .w3-alegreya {
+          font-family: 'Alegreya Sans', sans-serif;
+}
+
+        .homeSlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:16px; width:16px; padding:0}
+</style>
+
+<body>
+    
+        <div class="w3-bar w3-alegreya w3-2019-fruit-dove w3-animate-opacity w3-mobile">
+                             <a href="index.html" style="width:15%" class="w3-bar-item w3-button w3-2019-creme-de-peche w3-mobile">Home</a>
+                             <a href="aboutus.html" style="width:15%" class="w3-bar-item w3-button w3-mobile">About Us</a>
+                             <a href="products.html" style="width:15%" class="w3-bar-item w3-button w3-mobile">Products</a>
+                             <a href="services.html" style="width:15%" class="w3-bar-item w3-button w3-mobile">Services</a>
+                             <a href="contactus" style="width:15%" class="w3-bar-item w3-button w3-right w3-mobile">Contact Us</a>
+        </div>
+<br>
+
+        <header class="w3-container w3-center">
+                 <img src="images/logotransparent.png" alt="Logo" style="width:10%"> ​
+                 <br>
+                 <marquee class="w3-alegreya" direction="left"><i>“Welcome!”</i></marquee>
+        </header>
+       
+         <div class="w3-content w3-animate-opacity w3-display-container" style="max-width:800px">
+                             <img class="homeSlides w3-animate-opacity" src="images/bakeryshop.jpg" style="width:100%">
+                             <img class="homeSlides w3-animate-opacity" src="images/bakeryshop4.jpg" style="width:100%">
+        
+                 <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                             <div class="w3-left w3-hover-text-grey" onclick="plusDivs(-1)">&#10094;</div>
+                             <div class="w3-right w3-hover-text-grey" onclick="plusDivs(1)">&#10095;</div>
+                                     <span class="w3-badge slide w3-border w3-transparent w3-hover-grey" onclick="currentDiv(1)"></span>
+                                     <span class="w3-badge slide w3-border w3-transparent w3-hover-grey" onclick="currentDiv(2)"></span>
+                             </div>
+                             </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("homeSlides");
+  var dots = document.getElementsByClassName("slide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<br>
+
+         <div class="w3-container w3-cell-row w3-animate-opacity w3-mobile">
+
+                           <div class="w3-container w3-cell w3-mobile" style="width:50%">
+                                     <div class="w3-container w3-border w3-2019-creme-de-peche w3-justify w3-cell w3-mobile">
+                                               <h1 class="w3-alegreya w3-center w3-mobile">About Nacri.</h1>
+                                               <p class="w3-alegreya w3-mobile">We produce quality cakes, donuts and bun brand "Nacri" at a very affordable price. All our products are guaranteed Halal by Jakim.
+                                               </p>
+                                               <p class="w3-alegreya w3-mobile">Read more on <a href="aboutus.html"><i>About Us</i></a>.</p>
+                                     </div>
+                           </div>
+
+<br>
+
+                           <div class="w3-container w3-cell w3-animate-opacity w3-mobile" style="width:50%">
+                                     <div class="w3-container w3-border w3-2019-fruit-dove w3-justify w3-cell w3-mobile">
+                                               <h2 class="w3-alegreya w3-center w3-mobile">Disclaimer.</h2>
+                                               <p class="w3-alegreya w3-mobile">This website is created for the sole purpose of a group assignment in the subject IMD311.</p>
+                                               <p class="w3-alegreya w3-mobile"> All photos and information in the website belong to Nacri Sdn.Bhd. and were posted with their consent and permission.  We do not own any of the information used.</p>
+                                     </div>
+         </div>
+                  </div>
+
+ <hr>  
+ <div class="w3-container w3-2018-coconut-milk">
+
+         <div class="w3-container w3-center">
+                 <p class="w3-alegreya w3-xxlarge w3-mobile">OUR PRODUCTS</p>
+                 <p class="w3-alegreya w3-xlarge w3-mobile"><i>We strive to provide the best for our customers.</i></p>
+                 <button class="w3-button w3-2019-fruit-dove w3-round-large w3-animate-opacity w3-hover-pink"><p class="w3-alegreya w3-large w3-mobile"><a href="#1">Cakes & Cupcakes</a> | <a href="#2">Donuts</a> | <a href="#3">Buns</a> | <a href="products.html">More</a></p></button>
+
+<hr>
+     
+                           <div class="w3-container">
+
+                                    <div class="w3-cell w3-cell-middle w3-alegreya w3-2019-creme-de-peche w3-justify w3-animate-opacity w3-mobile"style="width:5dd0%">
+                                                     <h3 id="1" class="w3-xxlarge w3-alegreya w3-center"><b>CAKES & CUPCAKES</b></h3>
+                                                     <p class="w3-alegreya w3-large w3-mobile"><i>"Memang sgt recommended! Banyak varieties of cake. Boleh juga bawak design cake sendiri. Kek pun cantik dan sedap."</i></p>
+                                                     <p class="w3-alegreya w3-large w3-mobile"><i>"Kek yang ditempah cantik dan sedap."</i></p>
+                                                     <p class="w3-alegreya w3-mobile">- Customers' Feedbacks.</p>
+                                                     
+                                                     
+                                    </div>
+                                       
+                                    <div class="w3-container w3-cell w3-cell-middle w3-center w3-animate-opacity w3-mobile" style="width:50%">
+
+                                        <div class="w3-col s6">
+                                                 <img src="images/hfood5.JPG" alt="Cupcakes" style="width:100%">
+                                        </div>
+  
+                                        <div class="w3-col s6">
+                                                 <img src="images/hfood8.JPG" alt="Red Cake & Cupcakes" style="width:100%">
+                                        </div>
+
+                                        <div class="w3-col s6">
+                                                 <img src="images/hfood9.JPG" alt="Orange Fondant Cake" style="width:100%">
+                                        </div>
+
+                                         <div class="w3-col s6">
+                                                 <img src="images/hfood10.JPG" alt="Barbie Cake" style="width:100%">
+                                        </div>
+  
+                 
+                                    </div>
+                           </div>
+         
+
+<hr>
+
+         <div class="w3-container w3-center">
+                    
+                                    <div class="w3-container w3-cell w3-cell-middle w3-center w3-animate-opacity w3-mobile" style="width:30%">
+                                
+                                                 <img src="images/hfood4.jpg" class="w3-circle" alt="Donuts" style="width:70%">
+                                        </div>
+
+
+                                        <div class="w3-cell w3-cell-middle w3-alegreya w3-circle w3-2019-creme-de-peche
+                                        w3-justify w3-animate-opacity w3-mobile" style="width: 30%">
+                                                     <h3 id="2" class="w3-xxlarge w3-alegreya w3-center w3-mobile"><b>DONUTS</b></h3>
+                                                     <p class="w3-alegreya w3-large w3-center w3-mobile"><i>fluffy and flavorful</i></p>
+                                    </div>
+  
+ </div>
+
+ <br>
+
+<div class="w3-container w3-center">
+
+           <div class="w3-row w3-center w3-mobile">
+
+                    <div class="w3-round w3-2019-creme-de-peche">
+                      <h4 id="3" class="w3-alegreya w3-xxlarge w3-mobile"><b>BUNS</b></h4>
+                      <p class="w3-alegreya w3-large w3-mobile"><i>baked to perfection</i></p>
+                    </div>
+                      <div class="w3-col w3-container w3-animate-opacity w3-mobile" style="width:33.33%">
+                             <img src="images/hfood2.jpg" class="w3-round" alt="Cheesy Sausage Bun" style="width:100%">      
+                      </div>
+
+                      <div class="w3-col w3-container w3-animate-opacity w3-mobile" style="width:33.33%">
+                             <img src="images/hfood1.jpg" class="w3-round" alt="Glazed Bun" style="width:100%">
+                      </div>
+
+                      <div class="w3-col w3-container w3-animate-opacity w3-mobile" style="width:33.33%">
+                             <img src="images/hfood3.jpg" class="w3-round" alt="Sausage Bun" style="width:100%">       
+                      </div>
+           </div>
+         </div>
+
+         </div>
+    </div>
+<hr>
+
+<div class="w3-container">
+                 <p class="w3-alegreya w3-xxlarge w3-center w3-mobile">GETTING HERE</p>
+                 <p class="w3-alegreya w3-xlarge w3-center w3-mobile"><i>A guide to get to Nacri & Mastura bakery shop.</i></p>
+
+
+<br>
+<footer class="w3-container w3-center w3-alegreya w3-animate-opacity w3-mobile">
+  <p>&copy 2020 | NacriMastura Bakery</p>
+
+</footer>                      
+      
+</body>
+</html>
